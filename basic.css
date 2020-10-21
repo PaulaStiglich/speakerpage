@@ -10,7 +10,7 @@ body {
 }
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #404040;
     overflow: hidden;
   }
   
@@ -32,7 +32,7 @@ body {
   
   /* Add a color to the active/current link */
   .topnav a.active {
-    background-color: #4CAF50;
+    background-color: #59c597;
     color: white;
   }
 }
