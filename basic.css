@@ -1,4 +1,8 @@
-/* Basic styling */
+/* =======================
+   Base Layout Styles
+========================== */
+
+/* Universal Styling */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -8,7 +12,7 @@ body {
     font-family: sans-serif;
     font-size: 14px;
 }
-/* Add a black background color to the top navigation */
+/* Add a black background color to the top navigation bar */
 .topnav {
     background-color: #404040;
     overflow: hidden;
@@ -35,7 +39,22 @@ body {
     background-color: #59c597;
     color: white;
   }
-}
+
+  /* Style hero-image */
+
+  .hero-image {
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("dotbackground.jpg");
+
+    /* Set a specific height */
+    height: 75%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
 
 @media only screen and (min-width: 768px) {
     nav { flex-direction: row; }

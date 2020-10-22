@@ -5,13 +5,6 @@
         <link rel="stylesheet" href="basic.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>LouWIT Speaker Resources</title>
-        <style>
-            nav {
-            display: flex;
-            justify-content: space-between;
-            flex-direction: column;
-            }
-        </style>
     
     </head>
         <div class="topnav" id="home">
@@ -21,53 +14,18 @@
             <a href="#checklist">Checklist</a>
             <a href="#my_presentation">My Presentation</a>
             <a href="#faq">FAQ</a>
+        <style>
+            nav {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            }
+        </style>
             
         </div>
-    <body>
-        <div>
-            <img src="img/Dotbackground.jpg" alt="Test Image" width="900" height="600"><img src="img/Dotbackground.jpg" alt="Test Image" width="900" height="600">
-            <img src="img/witlogo.png" alt="Louisville Women in Technology logo" width="600" height="500">
-            <h1 id="event_information">Event Information</h1>
-            <p>My first paragraph.  Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem Ipsum dolor Lorem Ipsum dolor sit amet, consectetur </p>
-                <a href="#home">home</a>
-        </div>
-        <div>
-            <h1 id="deadlines">Deadlines</h1>
-            <img src="img/pexels-nappy-2362887.jpg" alt="Test Image" width="900" height="600">
-            <p>My first paragraph.  Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem Ipsum dolor Lorem Ipsum dolor sit amet, consectetur </p>
-                <a href="#home">home</a>
-        </div>
-
-        <div>
-            <h1 id="checklist">Checklist</h1>
-            <img src="img/pexels-nappy-2362887.jpg" alt="Test Image" width="900" height="600"
-            <p>My first paragraph.v Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem Ipsum dolor Lorem Ipsum dolor sit amet, consectetur </p>
-                <a href="#home">home</a>
-        </div>
-        <div>
-            <h1 id="my_presentation">My Presentation</h1>
-            <img src="img/pexels-nappy-2362887.jpg" alt="Test Image" width="900" height="600"
-            <p>My first paragraph.v Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem Ipsum dolor Lorem Ipsum dolor sit amet, consectetur </p>
-                <a href="#home">home</a>
-        </div>
-
-        <div>
-            <h1 id="faq">FAQ</h1>
-            <img src="img/pexels-nappy-2362887.jpg" alt="Test Image" width="900" height="600"
-            <p>My first paragraph.  Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
-                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem Ipsum dolor Lorem Ipsum dolor sit amet, consectetur </p>
-                <a href="#home">home</a>
-        </div>
-          
+        
+        <!-- <img src="img/Dotbackground.jpg" alt="Test Image" class="hero-image" width="900" height="600"> <a href="https://www.freepik.com/vectors/abstract"></a>
+        <img src="img/witlogo.png" alt="Louisville Women in Technology logo" width="600" height="500"> -->
 
     <style>
         p {
@@ -78,38 +36,49 @@
         </style>
         </head>
         <body>
-        
-        <p id="demo"></p>
-    <script>
-        // Set the date we're counting down to
-        var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
-        
-        // Update the count down every 1 second
-        var x = setInterval(function() {
-        
-          // Get today's date and time
-          var now = new Date().getTime();
-            
-          // Find the distance between now and the count down date
-          var distance = countDownDate - now;
-            
-          // Time calculations for days, hours, minutes and seconds
-          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-          // Output the result in an element with id="demo"
-          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-          + minutes + "m " + seconds + "s ";
-            
-          // If the count down is over, write some text 
-          if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "EXPIRED";
-          }
-        }, 1000);
-        </script>
+
+            <div>
+              
+                <h1 id="event_information">Event Information</h1>
+                <p>My first paragraph.  Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem Ipsum dolor Lorem Ipsum dolor sit amet, consectetur </p>
+                    <a href="#home">home</a>
+            </div>
+            <div>
+                <h1 id="deadlines">Deadlines</h1>
+                <img src="img/pexels-nappy-2362887.jpg" alt="Test Image" width="900" height="600">
+                <p>My first paragraph.  Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem Ipsum dolor Lorem Ipsum dolor sit amet, consectetur </p>
+                    <a href="#home">home</a>
+            </div>
+    
+            <div>
+                <h1 id="checklist">Checklist</h1>
+                <img src="img/pexels-nappy-2362887.jpg" alt="Test Image" width="900" height="600"
+                <p>My first paragraph.v Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem Ipsum dolor Lorem Ipsum dolor sit amet, consectetur </p>
+                    <a href="#home">home</a>
+            </div>
+            <div>
+                <h1 id="my_presentation">My Presentation</h1>
+                <img src="img/pexels-nappy-2362887.jpg" alt="Test Image" width="900" height="600"
+                <p>My first paragraph.v Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem Ipsum dolor Lorem Ipsum dolor sit amet, consectetur </p>
+                    <a href="#home">home</a>
+            </div>
+    
+            <div>
+                <h1 id="faq">FAQ</h1>
+                <img src="img/pexels-nappy-2362887.jpg" alt="Test Image" width="900" height="600"
+                <p>My first paragraph.  Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
+                    non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem Ipsum dolor Lorem Ipsum dolor sit amet, consectetur </p>
+                    <a href="#home">home</a>
+            </div>
 
     <h1>My First Heading</h1>
             <p>My first paragraph.
