@@ -1,9 +1,7 @@
 /* =======================
    Base Layout Styles
 ========================== */
-/* =======================
-   Base Layout Styles
-========================== */
+
 
 /* Universal Styling */
   * {
@@ -15,11 +13,11 @@
       font-family: sans-serif;
       font-size: 14px;
 
-  .nav {
+  /* .nav{
       display: flex;
       justify-content: space-between;
       flex-direction: column;
-      }
+      } */
   }
   /* Add a black background color to the top navigation bar */
   .topnav {
@@ -55,10 +53,11 @@
 /* The hero image */
   .hero-image {
     /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://via.placeholder.com/500");
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://via.placeholder.com/500"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/dotbackground.jpg");
 
     /* Set a specific height */
-    height: 50%;
+    height: 35%;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -68,13 +67,10 @@
   }
 
   /* Place text in the middle of the image */
-  .hero-text {
-    text-align: center;
+  .hero-logo {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%)
   }
 
 /* =======================
