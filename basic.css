@@ -53,6 +53,7 @@
 /* The hero image */
   .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/dotbackground.jpg");
+   border-bottom: solid rgb(89,197,151);
 
     /* Set a specific height */
     height: 35%;
