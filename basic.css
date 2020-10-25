@@ -56,7 +56,7 @@
    border-bottom: solid rgb(89,197,151);
 
     /* Set a specific height */
-    height: 35%;
+    height: 60%;
 
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
@@ -72,11 +72,4 @@
     transform: translate(-50%, -50%)
   }
 
-/* =======================
-   Media Queries
-========================== */
-
-@media only screen and (min-width: 768px) {
-    nav { flex-direction: row; }
-  }
 
