@@ -3,21 +3,21 @@
 	flex-wrap: wrap;
   }
 
-  .col1 {
+  .col2 {
 	flex: 30%;
 	background-color: #f1f1f1;
 	padding: 20px;
   }
 
-  .col2 {
+  .col1 {
 	flex: 70%;
 	background-color: white;
 	padding: 20px;
   }
 
-  .col3 {
+  /* .col3 {
 	flex: 1;
-
+  } */
 
 /* ================================= 
   Media Queries
@@ -64,7 +64,7 @@
 
 }
 
-@media (min-width: 991px) {
+/* /* @media (min-width: 991px) {
 
 	.main-header {
 		flex-direction: row;
@@ -78,5 +78,4 @@
 	.primary {
 		flex-grow: 1.4;
 	}
-
-} */
+}  */
