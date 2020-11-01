@@ -1,5 +1,12 @@
+*::after { 
+	box-sizing: border-box 
+  }
+
 .flex-container {
 	display: flex;
+	height: 400px;
+	margin: 0 auto;
+	justify-content: flex-start;
 	flex-wrap: wrap;
   }
 
@@ -10,15 +17,34 @@
   }
 
   .col1 {
+	position: relative;
 	flex: 70%;
-	background-color: white;
 	padding: 20px;
-	/* background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("img/WIT2019.webp"); */
+  }
+  /* using pseudo elements to create image opacity*/
+  .col1::after {  
+	content: "";
 	background-image: url("img/WIT2019.webp");
+	background-size: contain;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	opacity: 0.25;
+  }
+  .col1-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color:black;
+  }
+	/* background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("img/WIT2019.webp"); */
+	/* background-image: url("img/WIT2019.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background: opacity .2;
-  }
+
 
   /* .col1-background {
 	opacity: .5;
