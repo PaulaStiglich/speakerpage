@@ -17,13 +17,13 @@
 	background-image: url("img/WIT2019.webp");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-image: opacity .2;
+	background: opacity .2;
   }
 
-  .col1-background {
+  /* .col1-background {
 	opacity: .5;
 
-  }
+  } */
 
   /* .col2-background {
 	opacity: .5;
