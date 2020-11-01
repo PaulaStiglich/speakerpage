@@ -11,12 +11,6 @@
   body {
       font-family: sans-serif;
       font-size: 14px;
-
-  nav{
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-  }
   }
   p {
     text-align: left;
@@ -72,5 +66,3 @@
     top: 50%; left: 50%;
     transform: translate(-50%, -50%)
   }
-
-
