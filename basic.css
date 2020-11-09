@@ -9,8 +9,8 @@
       margin: 0;
   }
   body {
-      font-family: sans-serif;
-      font-size: 14px;
+    font-family: sans-serif;
+    font-size: 14px;
   }
   p {
     text-align: left;
@@ -41,7 +41,7 @@
       background-color: #59c597;
       color: white;
     }
-/* Style hero-image */
+    /* * Style hero-image */
     body, html {
     height: 100%;
 }
@@ -51,7 +51,7 @@
     border-bottom: solid rgb(89,197,151);
 
 /* Set a specific height */
-    height: 60%;
+    height: 100%;
 
 /* Position and center the image to scale nicely on all screens */
     background-position: center;

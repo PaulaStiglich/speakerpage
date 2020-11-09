@@ -1,0 +1,66 @@
+/* =======================
+   Define Grid
+========================== */
+html body {
+    /* min-height: 100vh; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: auto 1fr 1fr;
+    grid-gap: 1em; 
+    grid-template-areas: 
+        "n n n"
+        "h h h"
+        "a b b"
+        "f f f"
+    ;
+  }
+ /* =======================
+   Defining Grid Areas
+========================== */
+nav {
+grid-area: n;
+  }
+header {
+grid-area: h;
+}
+.a {
+grid-area: a;
+}
+.b {
+  grid-area: b;
+  }
+footer {
+grid-area: f;
+}
+
+
+
+  /* @media (min-width: 40em) {
+    body {
+      grid: 'nav nav nav nav' auto
+            'header header header header' 1fr
+            'body body body body' 1fr
+            'footer footer footer footer' auto
+          / 12em 1fr;
+    }
+  } */
+  
+  /* header { grid-area: header; }
+  nav { grid-area: nav; }
+  body { grid-area: body; }
+  footer { grid-area: footer; }
+  
+  
+  
+  /* show… */
+  /* body {
+    background: var(--dark-purple);
+  }
+   */
+  /* header,
+  nav,
+  body,
+  footer {
+    background: var(--background);
+    padding: 1em;
+  } */

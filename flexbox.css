@@ -1,4 +1,4 @@
-*::after { 
+/* *::after { 
 	box-sizing: border-box 
   }
 
@@ -6,7 +6,7 @@
 	display: flex;
 	height: 800px;
 	margin: 0 auto;
-	justify-content: flex-start;
+	justify-content: space-between;
 	flex-wrap: wrap;
   }
 
@@ -23,10 +23,11 @@
 
   .col1 {
 	position: relative;
+	align-self: stretch;
 	flex: 70%;
 	padding: 20px;
 	background-size: cover;
-	justify-content: center;
+	/* justify-content: center; */
 	/* width: 300px;
 	height: 300px; */
   }
@@ -110,4 +111,4 @@
 	.primary {
 		flex-grow: 1.4;
 	}
-}  */
+}  */ */
