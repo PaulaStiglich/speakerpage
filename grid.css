@@ -2,10 +2,10 @@
    Define Grid
 ========================== */
 html body {
-    /* min-height: 100vh; */
+    min-height: 100vh;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: auto 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr 1fr;
     grid-gap: 1em; 
     grid-template-areas: 
         "n n n"
@@ -32,8 +32,6 @@ grid-area: a;
 footer {
 grid-area: f;
 }
-
-
 
   /* @media (min-width: 40em) {
     body {
