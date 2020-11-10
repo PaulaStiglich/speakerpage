@@ -11,6 +11,8 @@ html body {
         "n n n"
         "h h h"
         "a b b"
+        "a b b"
+        "c c c"
         "f f f"
     ;
   }
@@ -27,8 +29,12 @@ grid-area: h;
 grid-area: a;
 }
 .b {
-  grid-area: b;
+grid-area: b;
   }
+
+.c {
+grid-area: c;
+    }
 footer {
 grid-area: f;
 }

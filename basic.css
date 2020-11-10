@@ -3,11 +3,11 @@
 ========================== */
 
 /* Universal Styling */
-  * {
+  /* * {
       box-sizing: border-box;
       padding: 0;
       margin: 0;
-  }
+  } */
   body {
     font-family: sans-serif;
     font-size: 14px;
@@ -16,6 +16,15 @@
     text-align: left;
     font-size: 14px;
     margin-top: 0px;
+  }
+
+  footer {
+    grid-area: footer;
+    background-color: #59c597;
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
   }
 /* Add a black background color to the top navigation bar */
   .topnav {
@@ -60,7 +69,7 @@
     position: relative;
   }
 
-/* Place text in the middle of the image */
+/* Place logo in the middle of the image */
   .hero-logo {
     position: absolute;
     top: 50%; left: 50%;
