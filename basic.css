@@ -12,10 +12,15 @@
     font-family: sans-serif;
     font-size: 14px;
   }
+
+  h1 {
+   justify-content: center;
+  }
   p {
     text-align: left;
     font-size: 14px;
     margin-top: 0px;
+
   }
 
   footer {
@@ -53,7 +58,7 @@
     /* * Style hero-image */
     body, html {
     height: 100%;
-}
+    }
 /* The hero image */
     header {
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/dotbackground.jpg");
@@ -71,7 +76,7 @@
 
 /* Place logo in the middle of the image */
   .hero-logo {
-    position: absolute;
+    position: center;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%)
     max-width: 100%;
