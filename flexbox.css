@@ -4,17 +4,16 @@
 
 .flex-container {
 	display: flex;
-	/* height: 800px; */
+	height: auto;
 	margin: 0 auto;
 	justify-content: space-between;
 	flex-wrap: wrap;
 	align-items: center;
-	max-width: 20%;
+	max-width: 40%;
 	max-height: 40%;
-  }
+   }
 
-  .col2 {
-	flex: 30%;
+.col2 {
 	background-color: #f1f1f1;
 	padding: 20px;
   }

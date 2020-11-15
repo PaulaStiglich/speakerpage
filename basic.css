@@ -1,4 +1,11 @@
 /* =======================
+   Normalize.css
+========================== */
+
+@import "normalize.css";
+
+
+/* =======================
    Base Layout Styles
 ========================== */
 
@@ -75,10 +82,10 @@
   }
 
 /* Place logo in the middle of the image */
-  .hero-logo {
+  /* .hero-logo {
     position: center;
     top: 50%; left: 50%;
     transform: translate(-50%, -50%)
     max-width: 100%;
     max-height: 100%;
-  }
+  } */
