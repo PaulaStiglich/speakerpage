@@ -13,7 +13,7 @@
   grid-template-areas: 
   "n n n n"
   "h h h h"
-  "a b b b"
+  "about about about about"
   "c c c c"
   "d d d d"
   "e e e e"
@@ -40,8 +40,9 @@ grid-area: n;
 header {
 grid-area: h;
 }
-.a {
-grid-area: a;
+.about {
+grid-area: about;
+background-color: lightblue;
 }
 .b {
 grid-area: b;
@@ -51,18 +52,22 @@ justify-content: center;
 
 .c {
 grid-area: c;
+background-color: rebeccapurple;
     }
 
 .d {
   grid-area: d;
+  background-color: rgb(74, 114, 243);
   }
 
 .e {
   grid-area: e;
+  background-color: rgb(240, 140, 190);
   }
 
 .faq {
   grid-area: faq;
+  background-color: rgb(211, 241, 155);
   }
 
 footer {
