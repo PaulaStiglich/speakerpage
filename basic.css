@@ -2,7 +2,7 @@
    Normalize.css
 ========================== */
 
-@import "normalize.css";
+/* @import "normalize.css"; */
 
 
 /* =======================
@@ -33,7 +33,7 @@
   footer {
     grid-area: footer;
     background-color: #59c597;
-    position:absolute;
+    /* position:absolute; */
     bottom:0;
     left:0;
     right:0;
