@@ -1,91 +1,102 @@
 /* =======================
-   Normalize.css
+   Color Palette
+   =======================
+--indigo: #470063ff;
+--purple-mountain-majesty: #947eb0ff;
+--lavender-blush: #f6e8eaff;
+--opal: #c4ddd7ff;
+--middle-blue-green: #92d1c3ff;
+-- grayish-yellow: #c1bfb5
+-- dark gray: #404040
+-- bright green: #59c597
 ========================== */
-
-/* @import "normalize.css"; */
-
 
 /* =======================
    Base Layout Styles
 ========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-/* Universal Styling */
-  /* * {
-      box-sizing: border-box;
-      padding: 0;
-      margin: 0;
-  } */
-  body {
-    font-family: sans-serif;
-    font-size: 14px;
-  }
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-  h1 {
-   justify-content: center;
-  }
-  p {
-    text-align: left;
-    font-size: 14px;
-    margin-top: 0px;
+/* =======================
+   Nav Layout Styles
+========================== */
 
-  }
-
-  footer {
-    grid-area: footer;
-    background-color: #59c597;
-    /* position:absolute; */
-    bottom:0;
-    left:0;
-    right:0;
-  }
 /* Add a black background color to the top navigation bar */
-  .topnav {
+  nav ul {
+      list-style-type: none;
+      border-top: 6px solid #404040;
       background-color: #404040;
-      overflow: hidden;
     }
 /* Style the links inside the navigation bar */
-    .topnav a {
-      float: left;
-      color: #f2f2f2;
+  nav ul li a {
+      text-decoration: none;
+      display: block;
       text-align: center;
       padding: 14px 16px;
-      text-decoration: none;
       font-size: 17px;
+      text-transform: uppercase;
+      color:whitesmoke;
     }
+
+    nav ul li a:hover {
+      color:whitesmoke;
+    }
+
+
+/* =======================
+   Media Query for Navigation
+========================== */
+
+@media screen and (min-width:576px){
+  nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  nav ul li {
+flex: 1 0 auto;
+  }
+}
+
+/* =======================
+   Banner
+========================== */
+#banner {
+min-height: 30vh;
+max-height: 50vh;
+padding-top: 15px;
+background: url(img/Dotbackground.jpg);
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
 /* Change the color of links on hover */
-    .topnav a:hover {
+    /* .nav a:hover {
       background-color: #ddd;
       color: black;
-    }
+    } */
 /* Add a color to the active/current link */
-    .topnav a.active {
+    /* .nav a.active {
       background-color: #59c597;
-      color: white;
-    }
-    /* * Style hero-image */
-    body, html {
-    height: 100%;
-    }
-/* The hero image */
-    header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("img/dotbackground.jpg");
-    border-bottom: solid rgb(89,197,151);
+      color: white; }*/
 
-/* Set a specific height */
-    height: 100%;
 
-/* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-  }
 
-/* Place logo in the middle of the image */
-  /* .hero-logo {
-    position: center;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%)
-    max-width: 100%;
-    max-height: 100%;
-  } */
+
+
+
+  

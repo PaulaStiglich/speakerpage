@@ -52,22 +52,22 @@ justify-content: center;
 
 .c {
 grid-area: c;
-background-color: rebeccapurple;
+background-color: #92d1c3ff;
     }
 
 .d {
   grid-area: d;
-  background-color: rgb(74, 114, 243);
+  background-color: #947eb0ff;
   }
 
 .e {
   grid-area: e;
-  background-color: rgb(240, 140, 190);
+  background-color: #f6e8eaff;
   }
 
 .faq {
   grid-area: faq;
-  background-color: rgb(211, 241, 155);
+  background-color: #c4ddd7ff;
   }
 
 footer {
