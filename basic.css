@@ -278,10 +278,29 @@ justify-content: center;
 
 
 
-
-
-
-
+/* =======================
+  COUNTDOWN CLOCK STYLE
+========================== */
+  .box{
+    padding: 2rem;
+    margin: 1rem;
+    background-color: #eee;
+    box-shadow: 0 0 10px #888;
+    border-radius: 5px;
+    text-align: center;
+}
+#if-expired{
+    display: none;
+    font-size: 1.5rem;
+}
+.timer{
+    font-size: 4rem;
+}
+.caption{
+    text-align: center;
+    font-family: fantasy;
+    font-size: 1.2rem
+}
 
 
 
