@@ -154,14 +154,14 @@ justify-content: center;
 .title-text {
   text-align: center;
   font-size: 40px;
-  color: #c1bfb5;
+  color: whitesmoke;
   font-style: italic;
   text-transform: uppercase;
 }
 
 .title-underline {
   width: 200px;
-  border: 3px solid #404040;
+  border: 3px solid whitesmoke;
   margin: 0 auto;
 }
 
@@ -178,16 +178,15 @@ justify-content: center;
 }
 
 .checklist-container {
-
-  max-width: 90vh;
+  max-width: 90vw;
   margin: 0 auto;
-  color: #e0e2db;
+  color: whitesmoke;
 }
 
 .checklist-item {
   overflow: hidden;
   position: relative;
-  padding: 60px;
+  padding: 40px;
 }
 
 .checklist-item .fa {
@@ -201,7 +200,93 @@ justify-content: center;
 }
 .checklist-item-white {
   background: linear-gradient(rgba(206,208,206,0.6),rgba(206,208,206,0.6));
+  color: #191718;
 }
+
+.front-text {
+  text-align: center;
+  transition: transform 2s;
+}
+
+.back-text {
+  position: absolute;
+  bottom: -15em;
+  width: 75%;
+  margin: 0 auto;
+  height: 100%;
+  transition: bottom 2s;
+  padding: 0px 0;
+}
+
+.back-text h1 {
+  margin-bottom: 20px;
+}
+
+.back-text button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: transparent;
+  border:2px solid #e6af2e;
+  font-size: 20px;
+  color: #e6af2e;
+}
+
+.back-text button:hover {
+  background-color: #e6af2e;
+  color: #191716;
+}
+
+.checklist-item-white button {
+  background-color: #e6af2e;
+  color: #191716;
+}
+
+.checklist-item-white button:hover {
+  background: #191716;
+  background-color: #191716;
+  color: #e6af2e;
+} 
+
+.checklist-item:hover .front-text {
+  transform: translateY(-200px);
+}
+
+.checklist-item:hover .back-text {
+  bottom: 0;
+}
+@media screen and (min-width:776px) {
+
+  .checklist-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+    .checklist-container .checklist-item:nth-of-type(1) {
+      order:1
+    }
+    .checklist-container .checklist-item:nth-of-type(2) {
+      order:2
+    }
+    .checklist-container .checklist-item:nth-of-type(3) {
+      order:4
+    }
+    .checklist-container .checklist-item:nth-of-type(4) {
+      order:3
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
