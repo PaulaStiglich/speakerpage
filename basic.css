@@ -100,18 +100,19 @@ justify-content: center;
 .about-item {
   text-align: center;
   margin: 20px 0;
+  border: 1px solid #404040;
 }
 
 .about-item .fa {
   font-size: 60px;
   color: #470063ff;
+  padding: 20px;
 }
 
 .about-item h1 {
-  font-size: 30px;
-  color:#92d1c3ff;
+  font-size: 20px;
+  color:#404040;
   letter-spacing: 2px;
-  margin: 30px 0;
   text-transform: uppercase;
 }
 
@@ -119,6 +120,7 @@ justify-content: center;
   width: 75%;
   margin: 0 auto;
   color: azure;
+  padding: 0px 0px 20px 0px;
 }
 
 @media screen and (min-width:576px) {
@@ -127,20 +129,79 @@ justify-content: center;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1em;
   }
+  
 
 
 @media screen and (min-width:992px) {
   .about-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-column-gap: 5px;
+    grid-column-gap: 40px;
   }
 
 }
 
+/* =======================
+  CHECKLIST SECTION STYLES
+========================== */
 
+/* title */
 
+.title {
+  margin: 40px 0;
+}
 
+.title-text {
+  text-align: center;
+  font-size: 40px;
+  color: #c1bfb5;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.title-underline {
+  width: 200px;
+  border: 3px solid #404040;
+  margin: 0 auto;
+}
+
+/* checklist */
+
+#checklist {
+  min-height: 100vh;
+  background: url(img/pexels-ali-arapoglu-2623869.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0 80px 0;
+}
+
+.checklist-container {
+
+  max-width: 90vh;
+  margin: 0 auto;
+  color: #e0e2db;
+}
+
+.checklist-item {
+  overflow: hidden;
+  position: relative;
+  padding: 60px;
+}
+
+.checklist-item .fa {
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: #e6af2e;
+}
+
+.checklist-item-black {
+  background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+}
+.checklist-item-white {
+  background: linear-gradient(rgba(206,208,206,0.6),rgba(206,208,206,0.6));
+}
 
 
 
