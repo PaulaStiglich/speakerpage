@@ -83,6 +83,16 @@ align-items: center;
 justify-content: center;
 }
 
+.banner-headline{
+  text-align: center;
+  margin: 40px 0;
+  font-size: 3em;
+  color: #59c597;
+  background-color:#404040 ;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
 /* =======================
   ABOUT SECTION STYLES
 ========================== */
@@ -132,7 +142,7 @@ justify-content: center;
   
 
 
-@media screen and (min-width:99px) {
+@media screen and (min-width:990px) {
   .about-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -153,7 +163,7 @@ justify-content: center;
 
 .title-text {
   text-align: center;
-  font-size: 40px;
+  font-size: 3em;
   color: whitesmoke;
   font-style: italic;
   text-transform: uppercase;
@@ -254,6 +264,15 @@ justify-content: center;
 .checklist-item:hover .back-text {
   bottom: 0;
 }
+  
+@media screen and (min-width:576px){
+  checklist-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }  
+  
 @media screen and (min-width:990px) {
 
   .checklist-container {
@@ -278,10 +297,21 @@ justify-content: center;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* =======================
   COUNTDOWN CLOCK STYLE
 ========================== */
-  .box{
+  /* .box{
     padding: 2rem;
     margin: 1rem;
     background-color: #eee;
@@ -300,7 +330,7 @@ justify-content: center;
     text-align: center;
     font-family: fantasy;
     font-size: 1.2rem
-}
+} */
 
 
 
