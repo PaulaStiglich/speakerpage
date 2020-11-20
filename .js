@@ -1,31 +1,83 @@
-{const finalDate = new Date ("May 18, 2021 00:00:00").getTime();
 
-timer = () => {
-  const now = new Date().getTime();
-  const diff  = finalDate - now;
-  if (diff < 0){
-    clearInterval(x);
-    document.getElementById('container').style.display = "none";
-    document.getElementById('if-expired').style.display = "block";
-  }
- let days = Math.floor(diff/ (1000*60*60*24));
- let hours = Math.floor ((diff % (1000*60*60*24))/(1000*60*60));
- let minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
- let seconds = Math.floor((diff % (1000*60))/ 1000);
 
- days <=9 ? days = `00${days}` :
-    days <=99 ? days = `0${days}`: days;
-  hours <=9 ? hours = `0${hours}` : hours;
-  minutes <=9 ? minutes = `0${minutes}` : minutes;
-  seconds <=9 ? seconds = `0${seconds}` : seconds;
+//Popup Dialog Box****************************************************
 
- document.querySelector("#days .box").textContent = days;
- document.querySelector("#hours .box").textContent = hours;
- document.querySelector("#minutes .box").textContent = minutes;
- document.querySelector("#seconds .box").textContent = seconds;
-}
 
-const x = setInterval(timer, 1000);
+const open = document.getElementById('open');
+const modal_container = document.getElementById('model_container');
+const close = document.getElementById('close');
+
+open.addEventListener('click', () => {
+  modal_container.classList.add('show');
+});
+
+close.addEventListener('click', () => {
+  modal_container.classList.remove('show');
+});
+
+
+//Speaker Array *************************************************
+
+
+// const speakerInfo = [
+//   ['Ritika Nevatia', 'Navigating a Global Career and Machine Learning Algorithms', 'Nunn', 'May 18th', '11:00am'],
+//   ['Alicia Park', 'How do you get more women in tech, retain and close the gender gap', 'Collins', 'May 18th', '11:00am'],
+//   ['Flo Wright', 'tbd', 'Willis', 'May 19th', '11:00am'],
+//   ['Alisia McClain', 'tbd', 'Clements', 'May 19th', '11:00am'],
+//   ['Teresa Carlson', 'tbd', 'Combs Chandler', 'May 19th', '11:00am'],
+// ];
+
+// //const speakerinfo = `${speakerinfo[0][1]}, ${speakerinfo[1][1]}, ${speakerinfo[5][1]}`;
+// //console.log(myArtists);
+
+// function createListItems( arr ) {
+//   let items = '';
+//   for ( let i = 0; i < arr.length; i++ ) {
+//     items += `<li>${ arr[i][0] }, Session Title ${ arr[i][1] }, Room ${ arr[i][2], "Date" ${ arr[i][3], "Time" ${ arr[i][4]} </li>`;
+//   }
+//   return items;
+// }
+
+// document.querySelector('main').innerHTML = `
+//   <ol>
+//     ${createListItems(speakerSessionInfo)}
+//   </ol>
+// `;
+
+
+//Countdown timer *************************************************
+
+// {const finalDate = new Date ("May 18, 2021 00:00:00").getTime();
+
+// // Arrow Function 
+// timer = () => {
+//   const now = new Date().getTime();
+//   const diff  = finalDate - now;
+//   if (diff < 0){
+//     clearInterval(x);
+//     document.getElementById('container').style.display = "none";
+//     document.getElementById('if-expired').style.display = "block";
+//   }
+// //Arrow Function
+
+//  let days = Math.floor(diff/ (1000*60*60*24));
+//  let hours = Math.floor ((diff % (1000*60*60*24))/(1000*60*60));
+//  let minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+//  let seconds = Math.floor((diff % (1000*60))/ 1000);
+
+//  days <=9 ? days = `00${days}` :
+//     days <=99 ? days = `0${days}`: days;
+//   hours <=9 ? hours = `0${hours}` : hours;
+//   minutes <=9 ? minutes = `0${minutes}` : minutes;
+//   seconds <=9 ? seconds = `0${seconds}` : seconds;
+
+//  document.querySelector("#days .box").textContent = days;
+//  document.querySelector("#hours .box").textContent = hours;
+//  document.querySelector("#minutes .box").textContent = minutes;
+//  document.querySelector("#seconds .box").textContent = seconds;
+// }
+
+// const x = setInterval(timer, 1000);
   
   
   
@@ -74,4 +126,4 @@ const x = setInterval(timer, 1000);
         document.getElementById("demo").innerHTML = "EXPIRED";
       }
     }, 1000);
-    </script> */}
+    </script> */

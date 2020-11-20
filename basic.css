@@ -232,6 +232,51 @@ justify-content: center;
   margin-bottom: 20px;
 }
 
+/* Interactive Button*********************************************** */
+
+.modal-container {
+  display: none;
+}
+
+button {
+  background-color: #470063ff;
+  color: #fff;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  padding: 10px 25px;
+}
+
+.modal-container {
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vh;
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  padding: 3opx 50px;
+  width: 600px;
+  max-width: 100%;
+}
+
+
+
 .back-text button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -265,7 +310,9 @@ justify-content: center;
   bottom: 0;
 }
   
-@media screen and (min-width:576px){
+
+
+@media screen and (max-width:576px){
   checklist-container {
     display: flex;
     flex-wrap: wrap;
@@ -354,6 +401,3 @@ justify-content: center;
     /* .nav a.active {
       background-color: #59c597;
       color: white; }*/
-
-
-    }
