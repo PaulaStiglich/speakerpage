@@ -6,25 +6,27 @@
 // let modalTrigger = document.querySelectorAll('modal-trigger');
 // }
 
-
-
-
-
-
-
-
 open.addEventListener('click', () => {
-  modal__container.classList.add('show');
-});
+  modal_container.classList.add('show');
+})
 
 close.addEventListener('click', () => {
   modal_container.classList.remove('show');
-});
-
+})
 
 const open = document.getElementById('open');
-const modal_container = document.getElementById('model_container');
+const modal_container = document.getElementById('modal-container');
 const close = document.getElementById('close');
+
+open.addEventListener('click', () => {
+  modal_container.classList.add('show');
+})
+
+close.addEventListener('click', () => {
+  modal_container.classList.remove('show');
+})
+
+
 
 
 //Speaker Array *************************************************
