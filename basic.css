@@ -248,7 +248,7 @@ button {
 }
 
 .modal-container {
-  background-color: rgba(0,0,0,0.3);
+  /* background-color: rgba(0,0,0,0.3); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,7 +312,7 @@ button {
   
 
 
-@media screen and (max-width:576px){
+@media screen and (min-width:288px){
   checklist-container {
     display: flex;
     flex-wrap: wrap;
@@ -342,19 +342,6 @@ button {
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* =======================
   COUNTDOWN CLOCK STYLE
 ========================== */
@@ -378,19 +365,6 @@ button {
     font-family: fantasy;
     font-size: 1.2rem
 } */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Change the color of links on hover */
     /* .nav a:hover {

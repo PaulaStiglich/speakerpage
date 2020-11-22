@@ -2,40 +2,54 @@
 
 //Popup Dialog Box****************************************************
 
-// function openModal() {
-// let modalTrigger = document.querySelectorAll('modal-trigger');
-// }
-
-
+// define elements
 
 const open = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close');
 
+// show open element__open modal
 open.addEventListener('click', () => {
   modal_container.classList.add('show');
 })
 
+// close open element__close modal
 close.addEventListener('click', () => {
   modal_container.classList.remove('show');
 })
 
-
-
-
 //Speaker Array *************************************************
 
+// The array the loop will source from
+var speakerInfo = [
+  ['Speaker Name', 'Session Title', 'Room', 'Date', 'Time']
+  ['Ritika Nevatia', 'Navigating a Global Career and Machine Learning Algorithms', 'Nunn', 'May 18th', '11:00am'],
+  ['Alicia Park', 'How do you get more women in tech, retain and close the gender gap', 'Collins', 'May 18th', '11:00am'],
+  ['Flo Wright', 'tbd', 'Willis', 'May 19th', '11:00am'],
+  ['Alisia McClain', 'tbd', 'Clements', 'May 19th', '11:00am'],
+  ['Teresa Carlson', 'tbd', 'Combs Chandler', 'May 19th', '11:00am'],
+]
 
-// const speakerInfo = [
-//   ['Ritika Nevatia', 'Navigating a Global Career and Machine Learning Algorithms', 'Nunn', 'May 18th', '11:00am'],
-//   ['Alicia Park', 'How do you get more women in tech, retain and close the gender gap', 'Collins', 'May 18th', '11:00am'],
-//   ['Flo Wright', 'tbd', 'Willis', 'May 19th', '11:00am'],
-//   ['Alisia McClain', 'tbd', 'Clements', 'May 19th', '11:00am'],
-//   ['Teresa Carlson', 'tbd', 'Combs Chandler', 'May 19th', '11:00am'],
-// ];
+// Documenting the main table 
+var table = document.createElement('table');
+document.body.appendChild(table);
 
-// //const speakerinfo = `${speakerinfo[0][1]}, ${speakerinfo[1][1]}, ${speakerinfo[5][1]}`;
-// //console.log(myArtists);
+// Populating the table with the array
+for (var i = 0; i<5; i++) {
+var tr = document.createElement('tr');
+table.appendChild(tr);
+
+for (var j = 0; j<5; j++) {
+  var tdElement = document.createElement('td');
+  tdElement.innerHTML = array[i][j];
+  tr.appendChild(tdElement);
+}
+}
+
+
+
+// const speakerinfo = `${speakerinfo[0][1]}, ${speakerinfo[1][1]}, ${speakerinfo[5][1]}`;
+// console.log(myArtists);
 
 // function createListItems( arr ) {
 //   let items = '';
@@ -56,35 +70,35 @@ close.addEventListener('click', () => {
 
 // {const finalDate = new Date ("May 18, 2021 00:00:00").getTime();
 
-// // Arrow Function 
-// timer = () => {
-//   const now = new Date().getTime();
-//   const diff  = finalDate - now;
-//   if (diff < 0){
-//     clearInterval(x);
-//     document.getElementById('container').style.display = "none";
-//     document.getElementById('if-expired').style.display = "block";
-//   }
-// //Arrow Function
+// Arrow Function 
+timer = () => {
+  const now = new Date().getTime();
+  const diff  = finalDate - now;
+  if (diff < 0){
+    clearInterval(x);
+    document.getElementById('container').style.display = "none";
+    document.getElementById('if-expired').style.display = "block";
+  }
+//Arrow Function
 
-//  let days = Math.floor(diff/ (1000*60*60*24));
-//  let hours = Math.floor ((diff % (1000*60*60*24))/(1000*60*60));
-//  let minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
-//  let seconds = Math.floor((diff % (1000*60))/ 1000);
+ let days = Math.floor(diff/ (1000*60*60*24));
+ let hours = Math.floor ((diff % (1000*60*60*24))/(1000*60*60));
+ let minutes = Math.floor((diff % (1000*60*60)) / (1000*60));
+ let seconds = Math.floor((diff % (1000*60))/ 1000);
 
-//  days <=9 ? days = `00${days}` :
-//     days <=99 ? days = `0${days}`: days;
-//   hours <=9 ? hours = `0${hours}` : hours;
-//   minutes <=9 ? minutes = `0${minutes}` : minutes;
-//   seconds <=9 ? seconds = `0${seconds}` : seconds;
+ days <=9 ? days = `00${days}` :
+  days <=99 ? days = `0${days}`: days;
+  hours <=9 ? hours = `0${hours}` : hours;
+  minutes <=9 ? minutes = `0${minutes}` : minutes;
+  seconds <=9 ? seconds = `0${seconds}` : seconds;
 
-//  document.querySelector("#days .box").textContent = days;
-//  document.querySelector("#hours .box").textContent = hours;
-//  document.querySelector("#minutes .box").textContent = minutes;
-//  document.querySelector("#seconds .box").textContent = seconds;
-// }
+ document.querySelector("#days .box").textContent = days;
+ document.querySelector("#hours .box").textContent = hours;
+ document.querySelector("#minutes .box").textContent = minutes;
+ document.querySelector("#seconds .box").textContent = seconds;
+}
 
-// const x = setInterval(timer, 1000);
+const x = setInterval(timer, 1000);
   
   
   
