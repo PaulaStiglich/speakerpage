@@ -14,7 +14,7 @@ This project designed for the Code Louisville Front-end September 2020 class. It
   - Used ":nth-of-type" to style re-order flexbox containers
 
 * JavaScript features included:
-  - Create ane populate a JavaScript array with one or more values and display the contents on your page. popup modal container populated with a javascript array.
+  - Create and populate a JavaScript array with one or more values and display the contents on your page. popup modal container populated with a javascript array.
   - A popup modal whose container is populated with the above referenced Javascript array.
   - 
 
