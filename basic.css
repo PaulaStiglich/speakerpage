@@ -245,6 +245,8 @@ button {
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   padding: 10px 25px;
+  margin-left:auto;
+  margin-right:auto;
 }
 
 .modal-container {
@@ -257,8 +259,8 @@ button {
   pointer-events: none;
   top: 0;
   left: 0;
-  height: 100vh;
-  width: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .modal-container.show {

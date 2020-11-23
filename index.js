@@ -18,33 +18,61 @@ close.addEventListener('click', () => {
   modal_container.classList.remove('show');
 })
 
-//Speaker Array *************************************************
+// //Speaker Array *************************************************
 
-// The array the loop will source from
-var speakerInfo = [
-  ['Speaker Name', 'Session Title', 'Room', 'Date', 'Time']
-  ['Ritika Nevatia', 'Navigating a Global Career and Machine Learning Algorithms', 'Nunn', 'May 18th', '11:00am'],
-  ['Alicia Park', 'How do you get more women in tech, retain and close the gender gap', 'Collins', 'May 18th', '11:00am'],
-  ['Flo Wright', 'tbd', 'Willis', 'May 19th', '11:00am'],
-  ['Alisia McClain', 'tbd', 'Clements', 'May 19th', '11:00am'],
-  ['Teresa Carlson', 'tbd', 'Combs Chandler', 'May 19th', '11:00am'],
+
+// var modalTableDiv = document.getElementById(`results`)
+// var table = document.createElement(`TABLE`)
+// var tableBody = document.createElement(`TBODY`)
+
+// // The array the loop will source from
+// var speakerInfo = [
+//   [`Speaker Name`, `Session Title`, `Room`, `Date`, `Time`]
+//   [`Ritika Nevatia`, 'Navigating a Global Career and Machine Learning Algorithms', 'Nunn', 'May 18th', '11:00am'],
+//   ['Alicia Park', 'How do you get more women in tech, retain and close the gender gap', 'Collins', 'May 18th', '11:00am'],
+//   ['Flo Wright', 'tbd', 'Willis', 'May 19th', '11:00am'],
+//   ['Alisia McClain', 'tbd', 'Clements', 'May 19th', '11:00am'],
+//   ['Teresa Carlson', 'tbd', 'Combs Chandler', 'May 19th', '11:00am'],
+// ]
+
+var myTableDiv = document.getElementById("results")
+var table = document.createElement('TABLE')
+var tableBody = document.createElement('TBODY')
+var memo = [
+['Speaker Name', 'Session Title', 'Room', 'Date', 'Time'],
+['Ritika Nevatia', 'Navigating a Global Career and Machine Learning Algorithms', 'Nunn', 'May 18th', '11:00am'],
+['Alicia Park', 'How do you get more women in tech, retain and close the gender gap', 'Nunn', 'May 18th', '11:00am'],
+['Speaker Name', 'Session Title', 'Room', 'Date', 'Time'],
+['sara','lily', 'julia'],
+['cody','timmy', 'john']
 ]
 
-// Documenting the main table 
-var table = document.createElement('table');
-document.body.appendChild(table);
+table.border = '1'
+table.appendChild(tableBody);
 
-// Populating the table with the array
-for (var i = 0; i<5; i++) {
-var tr = document.createElement('tr');
-table.appendChild(tr);
+//TABLE ROWS
+for (i = 0; i < this.memo.length; i++) {
+    var tr = document.createElement('TR');
+    for (j = 0; j < this.memo[i].length; j++) {
+        var td = document.createElement('TD');
+        td.onclick = function () {
+            check(this.innerHTML);
+        }
+        td.appendChild(document.createTextNode(this.memo[i][j]));
+        tr.appendChild(td)
+    }
+    tableBody.appendChild(tr);
+}  
+myTableDiv.appendChild(table);
 
-for (var j = 0; j<5; j++) {
-  var tdElement = document.createElement('td');
-  tdElement.innerHTML = array[i][j];
-  tr.appendChild(tdElement);
+function check(a) {
+    console.log(a);
 }
-}
+
+
+
+
+
 
 
 
