@@ -239,6 +239,8 @@ justify-content: center;
 }
 
 button {
+  display: flex; 
+  justify-content: center; 
   background-color: #470063ff;
   color: #fff;
   border: 0;

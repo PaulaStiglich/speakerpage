@@ -42,9 +42,9 @@ var memo = [
 ['Speaker Name', 'Session Title', 'Room', 'Date', 'Time'],
 ['Ritika Nevatia', 'Navigating a Global Career and Machine Learning Algorithms', 'Nunn', 'May 18th', '11:00am'],
 ['Alicia Park', 'How do you get more women in tech, retain and close the gender gap', 'Nunn', 'May 18th', '11:00am'],
-['Speaker Name', 'Session Title', 'Room', 'Date', 'Time'],
-['sara','lily', 'julia'],
-['cody','timmy', 'john']
+['Flo Wright', 'tbd', 'Willis', 'May 19th', '11:00am'],
+['Alisia McClain', 'tbd', 'Clements', 'May 19th', '11:00am'],
+['Teresa Carlson', 'tbd', 'Combs Chandler', 'May 19th', '11:00am']
 ]
 
 table.border = '1'

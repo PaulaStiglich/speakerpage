@@ -14,21 +14,8 @@ This project designed for the Code Louisville Front-end September 2020 class. It
   - Used ":nth-of-type" to style re-order flexbox containers
 
 * JavaScript features included:
-  - A navigation menu that expands and collapses properly at desktop and mobile sizes
-  - Used Fexbox and CSS Grid to organize content areas based on mobile or desktop views
-  - Used ":nth-of-type" to style re-order flexbox containers
-
-
--- 
-
-
-```
-
-
-
-```
-
-## Contributing
-
+  - Create ane populate a JavaScript array with one or more values and display the contents on your page. popup modal container populated with a javascript array.
+  - A popup modal whose container is populated with the above referenced Javascript array.
+  - 
 
 ## &copy; Paula Stiglich 
